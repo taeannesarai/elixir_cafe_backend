@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <%- include('_styles') %>
+    <title><%= locals.subject ? subject : 'Elixir Cafe' %></title>
+  </head>
+  <body>
+    <center class="wrapper">
+      <!-- main table -->
+      <table class="main">
+        <tr>
+          <!-- padding cell space -->
+          <td class="padding"></td>
+          <td>
+            <!-- background color  -->
+            <table style="background-color: #fff">
+              <%- include('_email_header') %>
+              <tr>
+                <td style="line-height: 1.5">
+                  <h5>Dear <%= f_nm %> <%= l_nm %>,</h5>
+                  <p>
+                    Welcome to Elixir Cafe! We are thrilled to have you join our
+                    community of coffee enthusiasts and lovers of great
+                    ambiance. Your journey with us begins now, and we can't wait
+                    to share our passion for exceptional coffee, delectable
+                    treats, and a warm, inviting atmosphere.
+                  </p>
+                  <p>
+                    Here's a sneak peek of what awaits you: Artisanal Coffee:
+                    Indulge in our carefully crafted brews made from the finest
+                    beans sourced from around the world. Gourmet Delights: Treat
+                    yourself to our assortment of mouthwatering pastries,
+                    sandwiches, and desserts, freshly prepared to tantalize your
+                    taste buds. Cozy Ambiance: Relax and unwind in our cozy cafe
+                    environment, the perfect spot to catch up with friends, dive
+                    into a good book, or simply savor a moment of tranquility.
+                  </p>
+
+                  <p>
+                    At Elixir Cafe, we're committed to providing you with an
+                    unforgettable experience every time you walk through our
+                    doors.
+                    <br />
+                    If you have any questions or need assistance, feel free to
+                    reach out to our friendly team at support@elixircafe.com or give us
+                    a call at (876) 544-3421.
+                    <br />
+                    Thank you for choosing Elixir Cafe. We can't wait to serve
+                    you!
+                  </p>
+                  <p>
+                    Best regards, <br />
+                    Management
+                  </p>
+                  <p>Elixir Cafe</p>
+                  <br /><br />
+                  <%- include('_footnote') %>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <!-- cell for padding -->
+          <td class="padding"></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
